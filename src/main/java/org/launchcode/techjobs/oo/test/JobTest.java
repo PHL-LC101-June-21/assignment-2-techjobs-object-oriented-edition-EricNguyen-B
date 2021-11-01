@@ -28,6 +28,7 @@ public class JobTest {
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
         assertTrue(job1 instanceof Job);
+        assertEquals(job1.getEmployer().getValue(), "ACME");
     }
 
     @Test
@@ -44,4 +45,9 @@ public class JobTest {
                 new CoreCompetency("Persistence"));
         assertNotEquals(job1, job2);
     }
+
+//    @Test
+//    public void testToStringStartsAndEndsWithNewLine() {
+//
+//    }
 }
